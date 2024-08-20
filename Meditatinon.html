@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meditation</title>
+    <link rel="stylesheet" type"text/css" href="meditation.css">
+  </head>
+
+  <body>
+    <body class="dark" cz-shortcut-listen="true">
+      <a href="https://www.shecodes.io/" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-development/uploads/files/000/000/001/original/logo.png?1627901693"
+          class="logo"
+          alt="SheCodes Logo"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/127/original/logo-white.png?1663066816"
+          class="white-logo"
+          alt="SheCodes Logo"
+        />
+      </a>
+
+      <button id="theme-btn" class="theme-btn">Change theme</button>
+      <div class="container">
+        <h1>🧘‍♀️What is Meditation?🧘‍♀️</h1>
+        <h2>My favorite type of exercise</h2>
+        <a href="https://www.shecodes.io/" target="_blank">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9sd2kPFH3QhG6xXE-AR5tmbsMQor1XHt4ZA&s"
+            class="mad-photo"
+            alt="Meditation"
+            width="600px"
+          />
+        </a>
+
+        <div class="grid">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3WCc2WiaqRxeF8MIpQAhWZ9UB1DzR3XEow&s"
+            class="meditation-photos"
+            alt="Meditation"
+            width="300px"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQBpfSE1DRbAtla8i-VlRQJrMz24CbghrwaQ&s"
+            class="meditation-photos"
+            alt="Meditation"
+            width="300px"
+          />
+
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeD3DzTK2qvrvyMv_uq8tOsDZueNKVojMjlQ&s"
+            class="meditation-photos"
+            alt="Meditation"
+            width="300px"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCZPXZ01c_FEMIw6D7TWldrqigzCszdu6Cw&s"
+            class="meditation-photos"
+            alt="Meditation"
+            width="300px"
+          />
+        </div>
+
+        <div class="info">
+          <p>
+            Meditation is a practice in which an individual uses a technique –
+            such as mindfulness, or focusing the mind on a particular object,
+            thought, or activity – to train attention and awareness, and achieve
+            a mentally clear and <br />emotionally calm and stable state.
+            Meditation is practiced in numerous religious traditions
+            <br /><br />
+            📖
+            <a href="https://en.wikipedia.org/wiki/Meditation">
+              <strong> Read on Wikipedia </strong>
+            </a>
+          </p>
+        </div>
+
+        <button id="click-btn" class="click-btn">
+          Get in touch for a private class
+        </button>
+
+        <p>
+          <small>
+            Coded by <strong>Mabe Ntswaki👩‍💻</strong>
+            with HTML, CSS and JavaScript
+          </small>
+        </p>
+      </div>
+
+      <script>
+        function order() {
+          let quanty = prompt("Have you tried meditation before?");
+          let name = prompt("What is your first name?");
+          let email = prompt("What is your email?");
+
+          alert(
+            "Thank you" +
+              name +
+              "! We'll be in touch soon with more details. Feel free to contact us if you have any questions hello@shecodes.io"
+          );
+        }
+
+        function toggleTheme() {
+          if (theme === "light") {
+            theme = "dark";
+            document.querySelector("body").classList.add("dark");
+          } else {
+            theme = "light";
+            document.querySelector("body").classList.remove("dark");
+          }
+        }
+
+        let button = document.querySelector("#click-btn");
+        button.addEventListener("click", order);
+
+        let theme = "dark";
+        let themeButton = document.querySelector("#theme-btn");
+        themeButton.addEventListener("click", toggleTheme);
+      </script>
+    </body>
+  </body>
+</html>
